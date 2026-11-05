@@ -243,7 +243,6 @@ cd PC-Builder-Bangladesh-Desktop-App
 | :--- | :--- | :--- |
 | **Shahadat Hossain** | `23-51341-1` | System Architecture, Database Schema Design, Admin & Custom PC Builder Modules |
 | **Hamidul Islam** | `23-50447-1` | Staff Inventory Management, Stock Auditing Grids & Order Processing Modules |
-| **Razia Fahmida Haque** | `23-50740-1` | Customer Authentication, Standalone Product Ordering, UI Design & Validation |
 
 ---
 
