@@ -1,0 +1,63 @@
+C:\Users\User\Downloads\PCBUILDER\bin\Debug\PCBUILDER.exe.config
+C:\Users\User\Downloads\PCBUILDER\bin\Debug\PCBUILDER.exe
+C:\Users\User\Downloads\PCBUILDER\bin\Debug\PCBUILDER.pdb
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.Properties.Resources.resources
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.csproj.GenerateResource.cache
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.exe
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.pdb
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.Login.resources
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.Sing_up.resources
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.Admin.resources
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.Customer.resources
+C:\Users\User\Downloads\PCBUILDER\obj\Debug\PCBUILDER.Staff.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Login.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Sing_up.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Admin.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Staff.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Properties.Resources.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.csproj.GenerateResource.cache
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.exe
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.pdb
+C:\Users\User\Desktop\PCBUILDER\bin\Debug\PCBUILDER.exe.config
+C:\Users\User\Desktop\PCBUILDER\bin\Debug\PCBUILDER.exe
+C:\Users\User\Desktop\PCBUILDER\bin\Debug\PCBUILDER.pdb
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Info.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Adduser.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Remove.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.UpdateU.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.CUSTOMER.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.Customer2.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.AddProduct.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.DeleteProduct.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.ProductDetails.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.ShowOrder.resources
+C:\Users\User\Desktop\PCBUILDER\obj\Debug\PCBUILDER.OrderPC.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\bin\Debug\PCBUILDER.exe.config
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\bin\Debug\PCBUILDER.exe
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\bin\Debug\PCBUILDER.pdb
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.csproj.AssemblyReference.cache
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.AddProduct.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Adduser.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.CUSTOMER.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Customer2.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.DeleteProduct.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Form111.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Login.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.OrderPC.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.ProductDetails.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Remove.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.ShowOrder.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Sing_up.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Admin.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Staff.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Info.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.Properties.Resources.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.UpdateU.resources
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.csproj.GenerateResource.cache
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.csproj.CoreCompileInputs.cache
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.exe
+C:\Users\shaha\OneDrive\Desktop\C# FInal Project\PCBUILDER\obj\Debug\PCBUILDER.pdb
