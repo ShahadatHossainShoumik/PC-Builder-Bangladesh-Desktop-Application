@@ -1,137 +1,128 @@
-# 🖥️ PC Builder Bangladesh — Desktop Inventory & Custom PC Ordering System
+<div align="center">
 
-![C#](https://img.shields.io/badge/Language-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![.NET 8](https://img.shields.io/badge/Framework-.NET%208.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Windows Forms](https://img.shields.io/badge/GUI-Windows%20Forms%20(WFA)-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![MS SQL Server](https://img.shields.io/badge/Database-MS%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![Visual Studio 2022](https://img.shields.io/badge/IDE-Visual%20Studio%202022-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
+# PC Builder Bangladesh
+### *Enterprise Desktop Inventory Management & Custom PC Configuration System*
 
-> **A role-based desktop management and e-commerce system built using C# .NET 8 Windows Forms and Microsoft SQL Server that streamlines hardware inventory tracking, user administration, and custom PC rig configuration.**
+![C#](https://img.shields.io/badge/C%23-12.0-512BD4?style=flat-square&logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-8.0_Windows_Forms-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![SQL Server](https://img.shields.io/badge/Database-Microsoft_SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
+![ADO.NET](https://img.shields.io/badge/Data_Access-ADO.NET-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/IDE-Visual_Studio_2022-5C2D91?style=flat-square&logo=visualstudio&logoColor=white)
+![Status](https://img.shields.io/badge/Build-Completed-2EA043?style=flat-square)
 
----
+**Course:** CSC2210 — Object Oriented Programming 2 (Section: S | Group: 01)  
+**Semester:** Fall 2024–2025 | **Institution:** American International University-Bangladesh (AIUB)  
+**Supervisor:** Tamanna Zaman Bristy | **Domain:** Retail ERP & Custom Hardware E-Commerce
 
-## 📖 Project Overview & Academic Context
-
-**PC Builder Bangladesh** is a full-featured desktop application engineered as the capstone term project for the **CSC2210: Object Oriented Programming 2** course during the **Fall 2024–2025** semester at the **American International University-Bangladesh (AIUB)**.
-
-Designed around Object-Oriented Programming (OOP) principles and relational database integration, the platform addresses real-world retail workflows in the computer hardware market. It provides a unified Graphical User Interface (GUI) with role-based access control (RBAC) across three distinct user tiers: **Admin**, **Staff**, and **Customers**.
-
-### 🎓 Course Metadata
-* **Institution:** American International University-Bangladesh (AIUB)
-* **Department:** Department of Computer Science (Faculty of Science & Technology)
-* **Course Code & Title:** CSC2210 — Object Oriented Programming 2 (Section: S)
-* **Semester:** Fall 2024–2025
-* **Group Number:** Group 01
-* **Course Supervisor:** Tamanna Zaman Bristy
+</div>
 
 ---
 
-## 🛠️ Technologies & Tools Used
-
-* **Programming Language:** C# (Object-Oriented Programming)
-* **Application Framework:** .NET 8.0 (Windows Forms Application / WFA)
-* **Database Management System:** Microsoft SQL Server (T-SQL, ADO.NET Data Access)
-* **Data Representation:** `DataGridView` controls, dynamic cart state management, and parameterized CRUD operations
-* **Development Environment:** Microsoft Visual Studio 2022
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Business Context & Target Users](#business-context--target-users)
+- [Technology Stack & Architecture](#technology-stack--architecture)
+- [Database Schema & Normalization (2NF)](#database-schema--normalization-2nf)
+- [Core Modules & Functional Specifications](#core-modules--functional-specifications)
+- [Object-Oriented Design & System Workflow](#object-oriented-design--system-workflow)
+- [Installation & Deployment Guide](#installation--deployment-guide)
+- [Project Engineering Team](#project-engineering-team)
 
 ---
 
-## 🏗️ System Architecture & ER Model
+## Project Overview
+**PC Builder Bangladesh** is a multi-tier desktop management and retail ordering system built on the **.NET 8.0 framework** using **C# Windows Forms Application (WFA)** and **Microsoft SQL Server**. 
 
-The application follows a **3-Tier Desktop Architecture** separating the Windows Forms presentation layer, C# OOP business logic/validation layer, and MS SQL Server persistence layer.
+Developed following strict Object-Oriented Programming (OOP) principles and relational database normalization standards, the platform unifies retail hardware inventory management, administrative user oversight, and an interactive custom PC rig configurator. The application enforces Role-Based Access Control (RBAC) across three distinct operational tiers—**Administrator**, **Staff**, and **Customer**—ensuring secure data flow, real-time stock auditing, and automated order processing.
+
+---
+
+## Business Context & Target Users
+Retail computer hardware businesses manage complex multi-category inventories alongside custom-built PC orders. This system addresses those operational requirements across three user groups:
+
+* **System Administrators:** Maintain organizational security by provisioning internal accounts, auditing registered users, updating credentials, and revoking access.
+* **Inventory & Fulfillment Staff:** Track real-time stock levels across eight hardware categories, identify out-of-stock components instantaneously, and process both standalone accessory orders and bundled custom PC builds.
+* **Retail Customers:** Browse hardware catalogs, dynamically configure full custom desktop rigs with live price aggregation, or purchase standalone components via a streamlined checkout workflow.
+
+---
+
+## Technology Stack & Architecture
+
+| Layer / Category | Technology | Implementation Details |
+| :--- | :--- | :--- |
+| **Core Language** | **C# (.NET 8.0)** | Object-oriented business logic, event-driven form controllers, and input validation |
+| **Presentation Layer** | **Windows Forms (WinForms)** | Desktop Graphical User Interface (GUI), `DataGridView` data binding, and multi-form navigation |
+| **Persistence Layer** | **Microsoft SQL Server** | Relational storage across 13 normalized tables (`Admin`, `Staff`, `Customer`, `Order`, `PCorder`, and 8 component tables) |
+| **Data Access Layer** | **ADO.NET (`System.Data.SqlClient`)** | Relational CRUD operations, SQL query execution, and tabular dataset synchronization |
+| **Development Environment** | **Visual Studio 2022** | UI designer, build management, and SQL Server Object Explorer integration |
+| **Version Control** | **Git & GitHub** | Source control, documentation, and release management |
+
+### Three-Tier System Architecture
 
 ```text
 +-------------------------------------------------------------------------+
-|                   PRESENTATION LAYER (Windows Forms GUI)                |
-|   [Login / Sign-Up Form]   |   [Admin Panel]   |   [Staff & User UI]    |
+|                   PRESENTATION LAYER (WinForms Desktop UI)              |
+|   [Authentication Portal]   |   [Admin Console]   |   [Staff & User UI] |
 +------------------------------------+------------------------------------+
                                      |
                                      v
 +-------------------------------------------------------------------------+
-|                 BUSINESS LOGIC & OOP LAYER (C# .NET 8.0)                |
+|                 APPLICATION & OOP LOGIC LAYER (C# .NET 8.0)             |
 |  +-------------------+  +--------------------+  +--------------------+  |
-|  | Role-Based Auth   |  | Inventory & Stock  |  | Custom PC Builder  |  |
-|  | & Form Validation |  | Filtering Engine   |  | & Dynamic Cart     |  |
+|  | Role-Based Access |  | Inventory & Stock  |  | Custom Rig Builder |  |
+|  | & Form Validation |  | Filtering Engine   |  | & Cart Aggregator  |  |
 |  +-------------------+  +--------------------+  +--------------------+  |
 +------------------------------------+------------------------------------+
                                      |
-                             (ADO.NET / SQLClient)
+                             (ADO.NET / T-SQL)
                                      |
                                      v
 +-------------------------------------------------------------------------+
 |               DATA PERSISTENCE LAYER (Microsoft SQL Server)             |
 |  +------------------+  +---------------------+  +--------------------+  |
-|  | User Tables:     |  | Hardware Tables (8):|  | Transaction Tables:|  |
-|  | Admin, Staff,    |  | CPU, GPU/Monitor,   |  | Order (Single),    |  |
-|  | Customer         |  | RAM, ROM, Mobo, etc.|  | PCorder (Custom)   |  |
+|  | Identity Tables: |  | Catalog Tables (8): |  | Transaction Tables:|  |
+|  | Admin, Staff,    |  | CPU, Monitor, RAM,  |  | Order (Single),    |  |
+|  | Customer         |  | ROM, Mobo, Mouse... |  | PCorder (Custom)   |  |
 |  +------------------+  +---------------------+  +--------------------+  |
 +-------------------------------------------------------------------------+
 ```
 
-### Entity-Relationship (ER) Cardinality Summary
-* **`ADMIN` $\xrightarrow{1..*}$ `CUSTOMER` / `STAFF`:** Admin manages (creates, updates, deletes, and audits) multiple Staff and Customer accounts.
-* **`STAFF` $\xrightarrow{1..*}$ `PC_COMPONENTS`:** Staff manages inventory items across 8 hardware categories and monitors stock availability.
-* **`CUSTOMER` $\xrightarrow{1..*}$ `PC_COMPONENTS`:** Customers browse and select single or multiple hardware components.
-* **`CUSTOMER` $\xrightarrow{1..*}$ `ORDER` / `PC_ORDER`:** Customers place single-item orders or bundled custom PC rig orders, which are subsequently managed and fulfilled by **`STAFF`**.
-
 ---
 
-## ✨ Key Features & Role-Based Functionalities
+## Database Schema & Normalization (2NF)
 
-### 🛡️ 1. Administrator Module (`Admin`)
-The Admin holds system-wide privileges over user management and security oversight:
-* **Database-Level Authentication:** Admin accounts are provisioned directly at the database level (no public registration) using a unique `Name` (Primary Key) and `Pass`.
-* **Direct User Provisioning:** Create pre-verified `Customer` or `Staff` accounts with Name, Contact Number, Password, Email, and Residential Address.
-* **User Directory & Search:** View all registered Customers and Staff in a unified `DataGridView` or filter records instantaneously by `Name`.
-* **Account Modification & Removal:** Update user credentials and contact details in real time or permanently remove accounts from the database.
+* **Database Engine:** Microsoft SQL Server (T-SQL)
+* **Normalization Standard:** **Second Normal Form (2NF)** — All non-key attributes are fully functionally dependent on each table's Clustered Primary Key.
+* **Catalog Partitioning:** Hardware inventory is segmented into **8 dedicated component tables** (`CPU`, `Keyboard`, `Monitor`, `Motherboard`, `Mouse`, `Processor`, `Ram`, `Rom`) to optimize category-specific querying and sorting.
 
-### 📦 2. Inventory & Order Staff Module (`Staff`)
-Staff members control the hardware catalog, stock levels, and order fulfillment pipeline:
-* **Self-Registration & Login:** New staff members can register via the unified Sign-Up portal by selecting the `Staff` role.
-* **Multi-Category Product Addition:** Add new hardware items with unique `ID` (Primary Key), `Name`, `Brand`, `Model`, `Price`, `Quantity`, and `Storage` into 8 dedicated component tables:
-  * **Monitor** | **Mouse** | **Keyboard** | **CPU (Casing/Cooler)** | **Processor** | **Motherboard** | **RAM** | **ROM (SSD/HDD)**
-* **Category-Sorted Product Deletion:** Filter inventory by hardware category (automatically sorted in ascending order by `ID`) and delete obsolete products.
-* **Live Stock Auditing:** Dual-grid dashboard displaying **Available Products** (in-stock items) alongside **Stock Out Products** (items with zero quantity) for rapid restocking decisions.
-* **Dual Order Queue Management:** View and process both **Placed Orders** (individual component purchases) and **Placed PC Orders** (full custom rig builds), sorted by `Serial` number.
-
-### 🛒 3. Customer & Custom PC Builder Module (`Customer`)
-Customers experience an intuitive shopping and custom rig-building workflow:
-* **Customer Registration & Authentication:** Quick onboarding with password visibility toggles and form validation.
-* **Interactive Custom PC Builder (`OrderPC`):**
-  * Browse live inventory across all 8 component categories.
-  * Dynamically **Add** or **Delete** components into slots for Monitor, Mouse, Keyboard, CPU, Processor, Motherboard, RAM, and ROM.
-  * Real-time calculation of cumulative `TotalPrice` and concatenated `Products` list.
-  * Custom `BillingName` support (for gifting or third-party delivery).
-* **Individual Component Ordering (`OrderProduct`):** Purchase standalone accessories or replacement parts with automatic quantity multiplication (`TotalQuantity` $\times$ `UnitPrice`).
-* **Checkout & Payment:** Integrated **Cash on Delivery (COD)** confirmation workflow.
-
----
-
-## 🗄️ Database Schema & Normalization (2NF)
-
-All database tables are normalized to **Second Normal Form (2NF)**, ensuring every non-key attribute is fully functionally dependent on the table's Primary Key.
-
-| Entity / Table Group | Primary Key (PK) | Attributes / Columns |
-| :--- | :--- | :--- |
-| **`Admin`** | `Name` | `Pass` |
-| **`Staff`** | `NAME` | `PASS`, `NUMBER`, `MAIL`, `ADDRESS` |
-| **`Customer`** | `NAME` | `PASS`, `NUMBER`, `MAIL`, `ADDRESS` |
-| **Hardware Tables (x8)**<br>*(CPU, Keyboard, Monitor, Motherboard, Mouse, Processor, Ram, Rom)* | `Id` | `Name`, `Price`, `Brand`, `Model`, `Quantity`, `Image`, `Storage` |
-| **`PCorder`** *(Custom Builds)* | `Serial` *(Identity 1,1)* | `Name`, `Products`, `TotalPrice` |
-| **`Order`** *(Single Items)* | `Serial` *(Identity 1,1)* | `Buyer Name`, `Quantity`, `Total_Price` |
+| Table Name | Primary Key | Schema Attributes & Data Types | Purpose |
+| :--- | :--- | :--- | :--- |
+| **`Admin`** | `Name` (`NCHAR(10)`) | `Pass` (`INT`) | Stores internal system administrator credentials |
+| **`Staff`** | `NAME` (`NCHAR(10)`) | `PASS` (`INT`), `NUMBER` (`NCHAR(10)`), `MAIL` (`NVARCHAR(50)`), `ADDRESS` (`NCHAR(10)`) | Stores inventory and order management staff profiles |
+| **`Customer`** | `NAME` (`NCHAR(10)`) | `PASS` (`INT`), `NUMBER` (`NCHAR(10)`), `MAIL` (`NVARCHAR(50)`), `ADDRESS` (`NCHAR(10)`) | Stores registered customer accounts and billing details |
+| **`[Components]`** *(x8 Tables)* | `Id` (`INT`) | `Name`, `Price`, `Brand`, `Model`, `Quantity`, `Storage` (`VARCHAR(50)`), `Image` (`NVARCHAR(255)`) | Stores hardware specs and stock levels for all 8 component categories |
+| **`Order`** | `Serial` (`INT IDENTITY`) | `Buyer_Name`, `Quantity`, `Total_Price` (`VARCHAR(50)`) | Logs standalone single-component customer purchases |
+| **`PCorder`** | `Serial` (`INT IDENTITY`) | `Name`, `Products`, `TotalPrice` (`VARCHAR(50)`) | Logs multi-component custom PC rig orders |
 
 <details>
-<summary><b>🔽 Click to Expand Complete MS SQL Server (T-SQL) Table Creation Script</b></summary>
+<summary><b>Click to Expand: Entity-Relationship (ER) Cardinality & T-SQL Schema Definitions</b></summary>
+<br>
 
+### Entity-Relationship Mapping
+* **`ADMIN` (1..*) ➔ `CUSTOMER` / `STAFF`:** Administrators provision, update, search, and remove multiple Customer and Staff records.
+* **`STAFF` (1..*) ➔ `PC_COMPONENTS`:** Staff members manage hardware entries across all 8 component tables.
+* **`CUSTOMER` (1..*) ➔ `PC_COMPONENTS`:** Customers select single or multiple components to build orders.
+* **`CUSTOMER` (1..*) ➔ `ORDER` / `PC_ORDER`:** Customers generate transaction records that are audited and fulfilled by **`STAFF`**.
+
+### T-SQL Table Creation Scripts
 ```sql
--- 1. Admin Table
+-- 1. User Role Tables
 CREATE TABLE [dbo].[Admin] (
     [Pass] INT NOT NULL,
     [Name] NCHAR (10) NOT NULL,
     PRIMARY KEY CLUSTERED ([Name] ASC)
 );
 
--- 2. Staff Table
 CREATE TABLE [dbo].[Staff] (
     [NAME]    NCHAR (10)    NOT NULL,
     [PASS]    INT           NOT NULL,
@@ -141,7 +132,6 @@ CREATE TABLE [dbo].[Staff] (
     PRIMARY KEY CLUSTERED ([NAME] ASC)
 );
 
--- 3. Customer Table
 CREATE TABLE [dbo].[Customer] (
     [NAME]    NCHAR (10)    NOT NULL,
     [PASS]    INT           NOT NULL,
@@ -151,7 +141,7 @@ CREATE TABLE [dbo].[Customer] (
     PRIMARY KEY CLUSTERED ([NAME] ASC)
 );
 
--- 4. Custom PC Order Table
+-- 2. Order Transaction Tables
 CREATE TABLE [dbo].[PCorder] (
     [Serial]     INT IDENTITY (1, 1) NOT NULL,
     [Name]       VARCHAR (50) NULL,
@@ -160,17 +150,15 @@ CREATE TABLE [dbo].[PCorder] (
     PRIMARY KEY CLUSTERED ([Serial] ASC)
 );
 
--- 5. Individual Component Order Table
 CREATE TABLE [dbo].[Order] (
     [Serial]      INT IDENTITY (1, 1) NOT NULL,
-    [Buyer Name]  VARCHAR (50) NULL,
+    [Buyer_Name]  VARCHAR (50) NULL,
     [Quantity]    VARCHAR (50) NULL,
     [Total_Price] VARCHAR (50) NULL,
     PRIMARY KEY CLUSTERED ([Serial] ASC)
 );
 
--- 6. Hardware Component Tables (CPU, Keyboard, Monitor, Motherboard, Mouse, Processor, Ram, Rom)
--- Note: Repeat structure below for [Keyboard], [Monitor], [Motherboard], [Mouse], [Processor], [Ram], and [Rom]
+-- 3. Hardware Component Table Template (Applied to CPU, Keyboard, Monitor, Motherboard, Mouse, Processor, Ram, Rom)
 CREATE TABLE [dbo].[CPU] (
     [Id]       INT            NOT NULL,
     [Name]     VARCHAR (50)   NULL,
@@ -183,51 +171,82 @@ CREATE TABLE [dbo].[CPU] (
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 ```
+
 </details>
 
 ---
 
-## ⚙️ Installation & Local Setup Guide
+## Core Modules & Functional Specifications
 
-### Prerequisites
-1. **Visual Studio 2022** with the **.NET Desktop Development** workload installed.
-2. **.NET 8.0 SDK**.
-3. **Microsoft SQL Server** (Express, Developer, or LocalDB) & **SQL Server Management Studio (SSMS)**.
+1. **Administrator Management Suite (`Admin`):**
+   - **Database-Enforced Security:** Admin accounts cannot be created via public sign-up forms; they are provisioned directly within SQL Server to prevent privilege escalation.
+   - **Direct User Provisioning (`Add User`):** Creates pre-verified `Customer` or `Staff` accounts with full contact metadata.
+   - **Live Directory & Search (`Show User`):** Queries and displays all registered users in a unified `DataGridView` with instant filtering by `Name`.
+   - **Account Maintenance (`Update Info` & `Delete User`):** Modifies user contact details, passwords, or unique usernames, and permanently removes inactive accounts.
 
-### Step-by-Step Execution
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/PC-Builder-Bangladesh.git
-   cd PC-Builder-Bangladesh
-   ```
-2. **Initialize the Database:**
-   * Open **SSMS**, create a new database, and execute the T-SQL table creation queries provided in the expandable section above.
-   * Insert a default Admin record into `[dbo].[Admin]` so you can log into the Admin Dashboard:
-     ```sql
-     INSERT INTO [dbo].[Admin] ([Name], [Pass]) VALUES ('admin', 1234);
-     ```
-3. **Configure Connection String:**
-   * Open the `.sln` file in **Visual Studio 2022**.
-   * Update the `SqlConnection` connection string in the project source code to match your local SQL Server instance (`Data Source=YOUR_SERVER_NAME;Initial Catalog=YOUR_DB_NAME;Integrated Security=True`).
-4. **Build & Run:**
-   * Press **F5** or click **Start** in Visual Studio 2022 to launch the application.
+2. **Inventory & Fulfillment Suite (`Staff`):**
+   - **Multi-Category Product Registration (`AddProduct`):** Inserts new hardware items (`Id`, `Name`, `Brand`, `Price`, `Model`, `Quantity`, `Storage`) into the selected category table (`Monitor`, `Mouse`, `Keyboard`, `CPU`, `Processor`, `Motherboard`, `RAM`, or `ROM`).
+   - **Category-Filtered Removal (`DeleteProduct`):** Dynamically loads products by category sorted in ascending order by `Id` for one-click deletion.
+   - **Dual-Grid Stock Auditing (`ProductDetails`):** Displays side-by-side views of **Available Products** (in stock) and **Stock Out Products** (`Quantity = 0`) to streamline restocking.
+   - **Order Queue Management (`ShowOrder`):** Provides separate real-time views for **Placed Orders** (single items) and **Placed PC Orders** (custom builds), sorted sequentially by `Serial`.
+
+3. **Customer Shopping & Custom PC Builder Suite (`Customer`):**
+   - **Interactive Custom Rig Configurator (`OrderPC`):** Allows users to switch across all 8 hardware categories, add or remove individual components from dedicated hardware slots, and dynamically compute the cumulative `TotalPrice` and concatenated `Products` manifest.
+   - **Standalone Component Purchasing (`OrderProduct`):** Supports direct single-category hardware purchases with automatic quantity-based price calculation (`TotalQuantity * Price`).
+   - **Third-Party Billing & Checkout:** Supports custom `BillingName` assignment for gift or recipient deliveries and concludes with a **Cash on Delivery (COD)** confirmation workflow.
 
 ---
 
-## 🚀 Future Scope & Enhancements
+## Object-Oriented Design & System Workflow
 
-* **Component Compatibility Checker:** Automatically verify CPU socket and Motherboard chipset compatibility (e.g., AM5 vs. LGA1700) and RAM generation (DDR4 vs. DDR5) during custom PC configuration.
-* **Online Payment Gateways:** Expand beyond Cash on Delivery (COD) to support bKash, Nagad, and SSLCommerz sandbox integrations.
-* **Automated PDF Invoice Generation:** Generate downloadable PDF receipts and warranty slips upon order confirmation.
-* **Password Hashing:** Upgrade authentication storage from plain integers/strings to salted SHA-256/BCrypt password hashes.
+<details>
+<summary><b>Click to Expand: OOP Principles, Validation & Data Verification</b></summary>
+<br>
+
+* **Encapsulation & Modular Form Design:**
+  * Each functional workflow (Authentication, Admin CRUD, Staff Inventory Control, Customer Rig Configuration, and Payment Confirmation) is encapsulated within dedicated Windows Form classes.
+* **Input Validation & Data Integrity:**
+  * Enforces primary key uniqueness on User `Name` and Product `Id` fields prior to database insertion.
+  * Implements password masking with interactive visibility toggles (`Show Password` checkboxes) across Login, Sign-Up, Add User, and Update User forms.
+  * Validates role selection radio buttons (`Customer` vs. `Staff`) and category selectors before executing SQL transactions.
+* **Dynamic State Synchronization:**
+  * Selecting any row in a `DataGridView` automatically populates bound textboxes for immediate editing or order calculation, ensuring real-time synchronization between the UI state and underlying SQL Server records.
+
+</details>
 
 ---
 
-## 👥 Group Members & Contributors
+## Installation & Deployment Guide
 
-Developed by **Group 01** (Section S, Fall 2024–2025):
+### 1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/PC-Builder-Bangladesh-Desktop-App.git
+cd PC-Builder-Bangladesh-Desktop-App
+```
 
-| # | Name | Student ID | Role |
-| :---: | :--- | :---: | :--- |
-| 1 | **Shahadat Hossain** | `23-51341-1` | Full-Stack .NET Developer & Database Architect |
-| 2 | **Hamidul Islam** | `23-50447-1` | Windows Forms UI/UX & Module Developer |
+### 2. Configure Microsoft SQL Server
+1. Open **SQL Server Management Studio (SSMS)** or **Visual Studio SQL Server Object Explorer**.
+2. Create a new database for the application.
+3. Execute the T-SQL table creation scripts provided in the [Database Schema](#database-schema--normalization-2nf) section to initialize the `Admin`, `Staff`, `Customer`, `Order`, `PCorder`, and 8 hardware component tables.
+4. Insert an initial Administrator record into the `[dbo].[Admin]` table for first-time login.
+
+### 3. Update Database Connection & Run
+1. Open the `.sln` solution file in **Visual Studio 2022** (ensure the **.NET Desktop Development** workload with **.NET 8.0** is installed).
+2. Update the SQL Server connection string in the project configuration/data access class to point to your local SQL Server instance.
+3. Press **F5** (or click **Start**) to build and launch the desktop application.
+
+---
+
+## Project Engineering Team
+
+| Name | Student ID | Role & Module Responsibility |
+| :--- | :--- | :--- |
+| **Shahadat Hossain** | `23-51341-1` | System Architecture, Database Schema Design, Admin & Custom PC Builder Modules |
+| **Hamidul Islam** | `23-50447-1` | Staff Inventory Management, Stock Auditing Grids & Order Processing Modules |
+| **Razia Fahmida Haque** | `23-50740-1` | Customer Authentication, Standalone Product Ordering, UI Design & Validation |
+
+---
+
+<div align="center">
+  <i>Developed for CSC2210 (Object Oriented Programming 2) — Fall 2024–2025 Semester at American International University-Bangladesh (AIUB).</i>
+</div>[pc_builder_bangladesh_c_net_project_readme.md](https://github.com/user-attachments/files/34446933/pc_builder_bangladesh_c_net_project_readme.md)
