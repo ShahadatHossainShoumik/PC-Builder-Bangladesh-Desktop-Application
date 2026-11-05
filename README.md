@@ -231,4 +231,3 @@ Developed by **Group 01** (Section S, Fall 2024–2025):
 | :---: | :--- | :---: | :--- |
 | 1 | **Shahadat Hossain** | `23-51341-1` | Full-Stack .NET Developer & Database Architect |
 | 2 | **Hamidul Islam** | `23-50447-1` | Windows Forms UI/UX & Module Developer |
-| 3 | **Razia Fahmida Haque** | `23-50740-1` | Database Modeling, QA & System Documentation |
